@@ -1,0 +1,63 @@
+<head>
+    <title>UTS 1</title>
+    <style>
+        body{
+            background-image: url("../UTS1/img/background.jpg");
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card form-1 my-lg-5">
+            <div class="validasi">
+                <form action="result.php" method="post">
+    
+                <h2 class="my-lg-5">WELCOME</h2><br>
+                    <div class="form-1">
+                <div class="input">
+                    <label for="fname">Your Name</label><br>
+                    <label for="fname">*First*</label><br>
+                    <input type="text" class="form_control" id="fname" name="fname" placeholder="Adelia"><br><br>
+        
+                    <label for="lname">*Last*</label><br>
+                    <input type="text" id="lname" name="lname" placeholder="Zhafirah"><br>
+                    <hr>
+                </div>
+        
+                <div class="email">
+                    <b>Flash fills is field in automatically. You can replace the text</b><br><br>
+                    <label for="email">Email</label> <br>
+                    <input class="form-control" type="email" name="email" id="email" placeholder="adeliaz@gmail.com" required><br>
+                    <hr>
+                </div>
+        
+                <h4>Select the category</h4>
+                <div class="form-check" name="">
+                    <input type="radio" id="VIP" name="fav_language" value="VIP">
+                    <label for="html">VIP</label><br>
+                    <input type="radio" id="Premium" name="fav_language" value="Premium">
+                    <label for="css">Premium</label><br>
+                    <input type="radio" id="Basic" name="fav_language" value="Basic">
+                    <label for="javascript">Basic</label><br><br>
+                </div>
+        
+            <label for="phone">Phone Number</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="+6281-2167-8924" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" required><br><br>
+        
+            <label for="birthday">Requested Date</label><br>
+            <input type="date" id="birthday" name="birthday">
+            <hr>
+            <textarea name="msg" id="" cols="50" rows="5" placeholder="Message:"></textarea><br><br>
+        
+            <button type="submit" name="" value="Show Results" class="btn btn-primary">Show Result</button>
+            <input type="reset" name="" value="Reset Fields" class="btn btn-danger">
+        </form>
+                </div>
+            </div>
+        </div>        
+    </div>
+    
+</body>
+</html>
